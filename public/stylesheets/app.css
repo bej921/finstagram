@@ -13,13 +13,7 @@ main {
     padding: 16px;  
 }
 
-.my-class-name  {
 
-}
-
-#my-unique-id {
-
-}
 
 .finstagram-post {
     margin-bottom: 48px;
@@ -33,6 +27,6 @@ main {
     margin-bottom: 13px;
 }
 
- .user-info img {
+.finstagram-post .user-info img {
     border-radius: 50%;
 }
