@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
     has_many :likes
 
     validates :email, :username, uniqueness: true
-    validates :email, :avatar_url, presence: true
+    validates :email, :avatar_url, :username, presence: true
     
 end
  
