@@ -6,6 +6,7 @@ class FinstagramPost < ActiveRecord::Base
     
     validates_presence_of :user 
 
+    validates :photo_url, :user, presence: true
 
     def humanized_time_ago
 
@@ -13,9 +14,9 @@ class FinstagramPost < ActiveRecord::Base
         time_ago_in_minutes = time_ago_in_seconds / 60
         
         if time_ago_in_minutes>= 60
-            "#{time_ago_in_minutes/60} hours ago"
+            "#{(time_ago_in_minutes/60).to_i} hours ago"
         else 
-            "#{time_ago_in_minutes} minutes ago"
+            "#{time_ago_in_minutes.to_i} minutes ago"
         end
     end
 
