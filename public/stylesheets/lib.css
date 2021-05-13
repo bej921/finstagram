@@ -26,7 +26,7 @@ header {
   overflow: hidden;
   display: flex;
   align-items: baseline;
-  color: tan;
+  background-color: tan;
   
 
   
@@ -41,7 +41,7 @@ header > .login-info {
 }
 
 main {
-  width: 450px;
+  width: 500px;
   margin: 0 auto;
   padding: 5px; 
 }
